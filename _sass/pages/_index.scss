@@ -1,0 +1,227 @@
+.block-hero-intro {
+    background: $heroblue;
+    color: white;
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 900px solid white;
+        border-right: 1200px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 700px solid white;
+        border-left: 600px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:before, &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-next-date {
+    background: $lightblue;
+    color: white;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid white;
+        border-left: 400px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-what-to-expect {
+    background: $purple;
+    color: white;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 500px solid white;
+        border-right: 700px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-about-program {
+    background: $darkblue;
+    color: white;
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 700px solid white;
+        border-right: 800px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 1200px solid white;
+        border-left: 1200px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:before, &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-feature {
+    border-right: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
+}
+.block-eligibility {
+    background: $lightblue;
+    color: white;
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid white;
+        border-right: 1200px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:before {
+            opacity: 0.1;
+        }
+    }
+}
+.block-timeline {
+    background: lighten($lightblue, 10%);
+    color: white;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid white;
+        border-left: 400px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-expectations {
+    background: $purple;
+    color: white;
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid white;
+        border-right: 1200px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 900px solid white;
+        border-left: 900px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:before, &:after {
+            opacity: 0.1;
+        }
+    }
+}
+.block-expectations-sub {
+    background: lighten($purple, 10%);
+    color: white;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid white;
+        border-left: 400px solid transparent;
+        opacity: 0.05;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.5s all;
+        pointer-events: none;
+    }
+    &:hover, &:focus, &:active {
+        &:after {
+            opacity: 0.1;
+        }
+    }
+}

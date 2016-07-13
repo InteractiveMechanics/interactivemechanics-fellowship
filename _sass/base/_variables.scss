@@ -1,0 +1,28 @@
+// Colors
+$lightblue:         #00badb;
+$heroblue:          #00589b;
+$darkblue:          #2c3392;
+$purple:            #782a83;
+$gold:              #c5b591;
+
+$lightgray:         #f1f2f2;
+$midgray:           #a7a9ac;
+$darkgray:          #414042;
+$black:             #231f20;
+
+
+// Typography
+$serif:             'adobe-caslon-pro', serif;
+$sansserif:         'museo-sans', sans-serif;
+
+
+// Media Queries
+$screen-xs:         '(max-width: 767px)';
+$screen-sm:         '(min-width: 768px) and (max-width: 991px)';
+$screen-ltmd:       '(max-width: 992px)';
+$screen-md:         '(min-width: 992px) and (max-width: 1199px)';
+$screen-lg:         '(min-width: 1200px)';
+
+
+// Transition
+$transition:        all 0.5s;
