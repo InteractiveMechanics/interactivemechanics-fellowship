@@ -5,10 +5,6 @@ footer {
     border-radius: 0;
     height: 60px;
     border-top: 1px solid lighten($black, 25%);
-        
-    @media screen and #{$screen-xs} {
-        text-align: center;
-    }
 
     p,
     a,

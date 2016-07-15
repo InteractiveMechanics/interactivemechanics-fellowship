@@ -6,14 +6,40 @@ section {
     margin: 0;
     height: 100vw;
 
+    @media screen and #{$screen-md} {
+        flex-direction: row;
+    }
+    @media screen and #{$screen-ltmd} {
+        display: block;
+    }
+
     &.section-one-tall {
-        max-height: 450px;
+        max-height: 50vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
     &.section-two-tall {
-        max-height: 900px;
+        max-height: 100vh;
+
+        @media screen and #{$screen-md} {
+            max-height: 150vh;
+            height: 150vh;
+        }
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
     &.section-three-tall {
-        max-height: 1350px;
+        max-height: 150vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
 }
 
@@ -26,27 +52,60 @@ section {
 
     &.block-one-wide {
         width: 33.33%;
+
+        @media screen and #{$screen-md} {
+            width: 50%;
+        }
+        @media screen and #{$screen-ltmd} {
+            width: 100%;
+        }
     }
     &.block-two-wide {
         width: 66.66%;
         padding: 80px;
+        
+        @media screen and #{$screen-md} {
+            width: 100%;
+            padding: 50px;
+        }
+        @media screen and #{$screen-ltmd} {
+            width: 100%;
+            padding: 50px;
+        }
     }
 
     &.block-one-tall {
-        height: 450px;
+        height: 50vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
     &.block-two-tall {
-        height: 900px;
+        height: 100vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
     &.block-three-tall {
-        height: 1350px;
+        height: 1500vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
     }
 
     &.block-image {
         padding: 0;
+        max-height: 50vh;
 
         img {
             max-width: 100%;
+            width: 100%;
         }
     }
 }

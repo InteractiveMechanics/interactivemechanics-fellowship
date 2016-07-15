@@ -33,6 +33,9 @@ h1 {
   font-weight: 400;
   line-height: 1;
   margin: 0 0 50px; }
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: 7.2rem; } }
 
 h2 {
   font-family: "museo-sans", sans-serif;
@@ -43,9 +46,9 @@ h2 {
   line-height: 1.8;
   text-transform: uppercase;
   letter-spacing: 1px; }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (max-width: 992px) {
     h2 {
-      font-size: 2.4rem; } }
+      font-size: 1.6rem; } }
 
 h3 {
   font-family: "adobe-caslon-pro", serif;
@@ -88,6 +91,9 @@ p {
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 50px; }
+    @media screen and (max-width: 992px) {
+      p.lead {
+        font-size: 2.1rem; } }
   p a {
     color: #782a83;
     font-weight: 700;
@@ -101,6 +107,9 @@ ul {
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 30px; }
+  @media screen and (max-width: 992px) {
+    ul {
+      padding-left: 18px; } }
   ul a {
     color: #782a83;
     font-weight: 700;
@@ -116,6 +125,9 @@ dl.dl-horizontal {
   dl.dl-horizontal dt {
     text-align: left;
     line-height: 1.8; }
+  @media screen and (max-width: 992px) {
+    dl.dl-horizontal dd {
+      margin-bottom: 10px; } }
 
 section {
   display: flex;
@@ -124,12 +136,34 @@ section {
   padding: 0;
   margin: 0;
   height: 100vw; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    section {
+      flex-direction: row; } }
+  @media screen and (max-width: 992px) {
+    section {
+      display: block; } }
   section.section-one-tall {
-    max-height: 450px; }
+    max-height: 50vh; }
+    @media screen and (max-width: 992px) {
+      section.section-one-tall {
+        max-height: none;
+        height: auto; } }
   section.section-two-tall {
-    max-height: 900px; }
+    max-height: 100vh; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      section.section-two-tall {
+        max-height: 150vh;
+        height: 150vh; } }
+    @media screen and (max-width: 992px) {
+      section.section-two-tall {
+        max-height: none;
+        height: auto; } }
   section.section-three-tall {
-    max-height: 1350px; }
+    max-height: 150vh; }
+    @media screen and (max-width: 992px) {
+      section.section-three-tall {
+        max-height: none;
+        height: auto; } }
 
 .block {
   padding: 50px;
@@ -139,19 +173,47 @@ section {
   position: relative; }
   .block.block-one-wide {
     width: 33.33%; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .block.block-one-wide {
+        width: 50%; } }
+    @media screen and (max-width: 992px) {
+      .block.block-one-wide {
+        width: 100%; } }
   .block.block-two-wide {
     width: 66.66%;
     padding: 80px; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .block.block-two-wide {
+        width: 100%;
+        padding: 50px; } }
+    @media screen and (max-width: 992px) {
+      .block.block-two-wide {
+        width: 100%;
+        padding: 50px; } }
   .block.block-one-tall {
-    height: 450px; }
+    height: 50vh; }
+    @media screen and (max-width: 992px) {
+      .block.block-one-tall {
+        max-height: none;
+        height: auto; } }
   .block.block-two-tall {
-    height: 900px; }
+    height: 100vh; }
+    @media screen and (max-width: 992px) {
+      .block.block-two-tall {
+        max-height: none;
+        height: auto; } }
   .block.block-three-tall {
-    height: 1350px; }
+    height: 1500vh; }
+    @media screen and (max-width: 992px) {
+      .block.block-three-tall {
+        max-height: none;
+        height: auto; } }
   .block.block-image {
-    padding: 0; }
+    padding: 0;
+    max-height: 50vh; }
     .block.block-image img {
-      max-width: 100%; }
+      max-width: 100%;
+      width: 100%; }
 
 hr {
   margin: 40px 0;
@@ -229,9 +291,6 @@ footer {
   border-radius: 0;
   height: 60px;
   border-top: 1px solid #675b5e; }
-  @media screen and (max-width: 767px) {
-    footer {
-      text-align: center; } }
   footer p,
   footer a,
   footer ul {
@@ -292,6 +351,9 @@ footer {
         stroke: #20256b; }
   .btn + .btn {
     margin-left: 15px; }
+    @media screen and (max-width: 992px) {
+      .btn + .btn {
+        margin: 20px 0 0; } }
   .btn.btn-white {
     border: 3px solid white;
     color: white;
