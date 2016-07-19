@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-family: "museo-sans", sans-serif;
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   font-weight: 900;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -48,23 +48,29 @@ h2 {
   letter-spacing: 1px; }
   @media screen and (max-width: 992px) {
     h2 {
-      font-size: 1.6rem; } }
+      font-size: 1.8rem; } }
 
 h3 {
   font-family: "adobe-caslon-pro", serif;
   font-size: 3.6rem;
   line-height: 1.4;
   margin: 0; }
+  @media screen and (max-width: 992px) {
+    h3 {
+      font-size: 3.0rem; } }
 
 h4 {
   font-family: "museo-sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0 0 20px; }
   h4 span.glyphicon {
     margin-right: 5px; }
+  @media screen and (max-width: 992px) {
+    h4 {
+      font-size: 1.6rem; } }
 
 h5 {
   font-family: "museo-sans", sans-serif;
@@ -84,7 +90,7 @@ textarea.form-control {
 p {
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 2.1;
   margin-bottom: 30px; }
   p.lead {
     font-size: 2.4rem;
@@ -94,13 +100,18 @@ p {
     @media screen and (max-width: 992px) {
       p.lead {
         font-size: 2.1rem; } }
-  p a {
-    color: #782a83;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.5s; }
-    p a:hover, p a:focus, p a:active {
-      color: #b39f70; }
+
+a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+  opacity: 1;
+  transition: all 0.5s; }
+  a:hover, a:focus, a:active {
+    opacity: 0.65;
+    color: white;
+    text-decoration: none; }
 
 ul {
   font-size: 1.6rem;
@@ -110,15 +121,12 @@ ul {
   @media screen and (max-width: 992px) {
     ul {
       padding-left: 18px; } }
-  ul a {
-    color: #782a83;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.5s; }
-    ul a:hover, ul a:focus, ul a:active {
-      color: #b39f70; }
   ul ul {
     margin-top: 15px; }
+
+span.divider {
+  margin: 0 12px;
+  opacity: 0.35; }
 
 dl.dl-horizontal {
   font-size: 1.6rem; }
@@ -142,6 +150,12 @@ section {
   @media screen and (max-width: 992px) {
     section {
       display: block; } }
+  section.section-half-tall {
+    max-height: 25vh; }
+    @media screen and (max-width: 992px) {
+      section.section-half-tall {
+        max-height: none;
+        height: auto; } }
   section.section-one-tall {
     max-height: 50vh; }
     @media screen and (max-width: 992px) {
@@ -257,6 +271,10 @@ header {
   left: 0;
   padding: 20px 30px;
   z-index: 9; }
+  header a {
+    border: none; }
+    header a:hover, header a:focus, header a:active {
+      border: none; }
   header svg {
     max-width: 40px;
     -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
@@ -289,8 +307,7 @@ footer {
   color: white;
   padding: 20px;
   border-radius: 0;
-  height: 60px;
-  border-top: 1px solid #675b5e; }
+  height: 60px; }
   footer p,
   footer a,
   footer ul {
@@ -302,10 +319,12 @@ footer {
   footer a {
     color: #d1d3d4;
     text-decoration: underline;
+    border: none;
     opacity: 1;
     transition: all 0.5s; }
     footer a:hover, footer a:focus, footer a:active {
-      opacity: 0.65; }
+      opacity: 0.65;
+      text-decoration: underline; }
 
 .btn {
   padding: 16px 24px 16px 24px;
@@ -317,7 +336,8 @@ footer {
   transition: all 0.5s;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  min-height: 60px; }
   @media screen and (max-width: 992px) {
     .btn {
       width: 100%;
@@ -374,7 +394,8 @@ footer {
     border: none;
     padding: 0;
     margin-top: 30px;
-    color: white; }
+    color: white;
+    min-height: none; }
     .btn.btn-text svg polygon {
       fill: white; }
     .btn.btn-text svg line {
@@ -563,5 +584,85 @@ footer {
     pointer-events: none; }
   .block-expectations-sub:hover:after, .block-expectations-sub:focus:after, .block-expectations-sub:active:after {
     opacity: 0.1; }
+
+.block-speakers {
+  background: #2c3392;
+  color: white; }
+  .block-speakers:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid white;
+    border-right: 1200px solid transparent;
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all;
+    pointer-events: none; }
+  .block-speakers:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 900px solid white;
+    border-left: 900px solid transparent;
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s all;
+    pointer-events: none; }
+  .block-speakers:hover:before, .block-speakers:hover:after, .block-speakers:focus:before, .block-speakers:focus:after, .block-speakers:active:before, .block-speakers:active:after {
+    opacity: 0.1; }
+
+.block-speakers-sub {
+  background: white;
+  color: black; }
+  .block-speakers-sub:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid #f1f2f2;
+    border-left: 400px solid transparent;
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s all;
+    pointer-events: none; }
+  .block-speakers-sub:hover:after, .block-speakers-sub:focus:after, .block-speakers-sub:active:after {
+    opacity: 0.1; }
+
+.block-apply-now {
+  background: #231f20;
+  color: white; }
+  .block-apply-now:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 900px solid white;
+    border-right: 1200px solid transparent;
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all;
+    pointer-events: none; }
+  .block-apply-now:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 700px solid white;
+    border-left: 600px solid transparent;
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s all;
+    pointer-events: none; }
+  .block-apply-now:hover:before, .block-apply-now:hover:after, .block-apply-now:focus:before, .block-apply-now:focus:after, .block-apply-now:active:before, .block-apply-now:active:after {
+    opacity: 0.1; }
+  .block-apply-now h3 {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */

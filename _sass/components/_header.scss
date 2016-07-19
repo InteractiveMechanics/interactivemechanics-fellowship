@@ -5,6 +5,14 @@ header {
     padding: 20px 30px;
     z-index: 9;
 
+    a {
+        border: none;
+        
+        &:hover, &:focus, &:active {
+            border: none;
+        }
+    }
+
     svg {
         max-width: 40px;
         -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));

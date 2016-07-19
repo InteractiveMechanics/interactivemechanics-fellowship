@@ -17,7 +17,7 @@ h1 {
 }
 h2 {
     font-family: $sansserif;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     font-weight: 900;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -26,7 +26,7 @@ h2 {
     letter-spacing: 1px;
 
     @media screen and #{$screen-ltmd} {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 }
 h3 {
@@ -36,12 +36,12 @@ h3 {
     margin: 0;
 
     @media screen and #{$screen-ltmd} {
-        
+        font-size: 3.0rem;
     }
 }
 h4 {
     font-family: $sansserif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 1px;
@@ -52,7 +52,7 @@ h4 {
     }
 
     @media screen and #{$screen-ltmd} {
-        
+        font-size: 1.6rem;
     }
 }
 h5 {
@@ -74,7 +74,7 @@ textarea.form-control {
 p {
     font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 2.1;
     margin-bottom: 30px;
 
     &.lead {
@@ -87,16 +87,19 @@ p {
             font-size: 2.1rem;
         }
     }
+}
+a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+    opacity: 1;
+    transition: $transition;
 
-    a {
-        color: $purple;
-        font-weight: 700;
+    &:hover, &:focus, &:active {
+        opacity: 0.65;
+        color: white;
         text-decoration: none;
-        transition: $transition;
-
-        &:hover, &:focus, &:active {
-            color: darken($gold, 10%);
-        }
     }
 }
 ul {
@@ -112,20 +115,13 @@ ul {
         padding-left: 18px;
     }    
 
-    a {
-        color: $purple;
-        font-weight: 700;
-        text-decoration: none;
-        transition: $transition;
-
-        &:hover, &:focus, &:active {
-            color: darken($gold, 10%);
-        }
-    }
-
     ul {
         margin-top: 15px;
     }
+}
+span.divider {
+    margin: 0 12px;
+    opacity: 0.35;
 }
 dl.dl-horizontal {
     font-size: 1.6rem;

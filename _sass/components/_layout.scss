@@ -13,6 +13,14 @@ section {
         display: block;
     }
 
+    &.section-half-tall {
+        max-height: 25vh;
+
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
+    }
     &.section-one-tall {
         max-height: 50vh;
 
