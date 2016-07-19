@@ -80,6 +80,9 @@ section {
             width: 100%;
             padding: 50px;
         }
+        @media screen and #{$screen-ltxl} {
+            padding: 50px;
+        }
     }
 
     &.block-one-tall {
@@ -112,8 +115,9 @@ section {
         max-height: 50vh;
 
         img {
-            max-width: 100%;
             width: 100%;
+            height: auto;
+            min-height: 100%;
         }
     }
 }

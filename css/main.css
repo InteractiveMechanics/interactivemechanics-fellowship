@@ -68,6 +68,9 @@ h4 {
   margin: 0 0 20px; }
   h4 span.glyphicon {
     margin-right: 5px; }
+  @media screen and (min-width: 1200px) and (max-width: 1379px) {
+    h4 {
+      font-size: 1.6rem; } }
   @media screen and (max-width: 992px) {
     h4 {
       font-size: 1.6rem; } }
@@ -92,11 +95,18 @@ p {
   font-weight: 300;
   line-height: 2.1;
   margin-bottom: 30px; }
+  @media screen and (min-width: 1200px) and (max-width: 1379px) {
+    p {
+      margin-bottom: 20px; } }
   p.lead {
     font-size: 2.4rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 50px; }
+    @media screen and (min-width: 1200px) and (max-width: 1379px) {
+      p.lead {
+        font-size: 2.1rem;
+        margin-bottom: 30px; } }
     @media screen and (max-width: 992px) {
       p.lead {
         font-size: 2.1rem; } }
@@ -204,6 +214,9 @@ section {
       .block.block-two-wide {
         width: 100%;
         padding: 50px; } }
+    @media screen and (min-width: 1200px) and (max-width: 1379px) {
+      .block.block-two-wide {
+        padding: 50px; } }
   .block.block-one-tall {
     height: 50vh; }
     @media screen and (max-width: 992px) {
@@ -226,8 +239,9 @@ section {
     padding: 0;
     max-height: 50vh; }
     .block.block-image img {
-      max-width: 100%;
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      min-height: 100%; }
 
 hr {
   margin: 40px 0;
