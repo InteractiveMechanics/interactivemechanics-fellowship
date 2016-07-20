@@ -16,6 +16,9 @@ section {
     &.section-half-tall {
         max-height: 25vh;
 
+        @media screen and (max-height: 820px) {
+            max-height: 35vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
@@ -24,6 +27,9 @@ section {
     &.section-one-tall {
         max-height: 50vh;
 
+        @media screen and (max-height: 820px) {
+            max-height: 75vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
@@ -32,6 +38,9 @@ section {
     &.section-two-tall {
         max-height: 100vh;
 
+        @media screen and (max-height: 820px) {
+            max-height: 150vh;
+        }
         @media screen and #{$screen-md} {
             max-height: 150vh;
             height: 150vh;
@@ -44,6 +53,9 @@ section {
     &.section-three-tall {
         max-height: 150vh;
 
+        @media screen and (max-height: 820px) {
+            max-height: 200vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
@@ -86,9 +98,21 @@ section {
         }
     }
 
+    &.block-half-tall {
+        @media screen and (max-height: 820px) {
+            height: 35vh;
+        }
+        @media screen and #{$screen-ltmd} {
+            max-height: none;
+            height: auto;
+        }
+    }
     &.block-one-tall {
         height: 50vh;
 
+        @media screen and (max-height: 820px) {
+            height: 75vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
@@ -97,14 +121,20 @@ section {
     &.block-two-tall {
         height: 100vh;
 
+        @media screen and (max-height: 820px) {
+            height: 150vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
         }
     }
     &.block-three-tall {
-        height: 1500vh;
+        height: 150vh;
 
+        @media screen and (max-height: 820px) {
+            height: 200vh;
+        }
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
@@ -114,6 +144,11 @@ section {
     &.block-image {
         padding: 0;
         max-height: 50vh;
+        background-size: cover;
+
+        @media screen and (max-height: 820px) {
+            max-height: 75vh;
+        }
 
         img {
             width: 100%;

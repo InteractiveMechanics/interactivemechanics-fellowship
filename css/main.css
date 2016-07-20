@@ -162,18 +162,27 @@ section {
       display: block; } }
   section.section-half-tall {
     max-height: 25vh; }
+    @media screen and (max-height: 820px) {
+      section.section-half-tall {
+        max-height: 35vh; } }
     @media screen and (max-width: 992px) {
       section.section-half-tall {
         max-height: none;
         height: auto; } }
   section.section-one-tall {
     max-height: 50vh; }
+    @media screen and (max-height: 820px) {
+      section.section-one-tall {
+        max-height: 75vh; } }
     @media screen and (max-width: 992px) {
       section.section-one-tall {
         max-height: none;
         height: auto; } }
   section.section-two-tall {
     max-height: 100vh; }
+    @media screen and (max-height: 820px) {
+      section.section-two-tall {
+        max-height: 150vh; } }
     @media screen and (min-width: 992px) and (max-width: 1199px) {
       section.section-two-tall {
         max-height: 150vh;
@@ -184,6 +193,9 @@ section {
         height: auto; } }
   section.section-three-tall {
     max-height: 150vh; }
+    @media screen and (max-height: 820px) {
+      section.section-three-tall {
+        max-height: 200vh; } }
     @media screen and (max-width: 992px) {
       section.section-three-tall {
         max-height: none;
@@ -218,27 +230,47 @@ section {
     @media screen and (min-width: 1200px) and (max-width: 1379px) {
       .block.block-two-wide {
         padding: 50px; } }
+  @media screen and (max-height: 820px) {
+    .block.block-half-tall {
+      height: 35vh; } }
+  @media screen and (max-width: 992px) {
+    .block.block-half-tall {
+      max-height: none;
+      height: auto; } }
   .block.block-one-tall {
     height: 50vh; }
+    @media screen and (max-height: 820px) {
+      .block.block-one-tall {
+        height: 75vh; } }
     @media screen and (max-width: 992px) {
       .block.block-one-tall {
         max-height: none;
         height: auto; } }
   .block.block-two-tall {
     height: 100vh; }
+    @media screen and (max-height: 820px) {
+      .block.block-two-tall {
+        height: 150vh; } }
     @media screen and (max-width: 992px) {
       .block.block-two-tall {
         max-height: none;
         height: auto; } }
   .block.block-three-tall {
-    height: 1500vh; }
+    height: 150vh; }
+    @media screen and (max-height: 820px) {
+      .block.block-three-tall {
+        height: 200vh; } }
     @media screen and (max-width: 992px) {
       .block.block-three-tall {
         max-height: none;
         height: auto; } }
   .block.block-image {
     padding: 0;
-    max-height: 50vh; }
+    max-height: 50vh;
+    background-size: cover; }
+    @media screen and (max-height: 820px) {
+      .block.block-image {
+        max-height: 75vh; } }
     .block.block-image img {
       width: 100%;
       height: auto;
