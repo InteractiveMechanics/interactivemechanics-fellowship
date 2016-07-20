@@ -35,7 +35,7 @@ h1 {
   margin: 0 0 50px; }
   @media screen and (max-width: 992px) {
     h1 {
-      font-size: 7.2rem; } }
+      font-size: 6.8rem; } }
 
 h2 {
   font-family: "museo-sans", sans-serif;
@@ -202,7 +202,8 @@ section {
         width: 50%; } }
     @media screen and (max-width: 992px) {
       .block.block-one-wide {
-        width: 100%; } }
+        width: 100%;
+        padding: 40px; } }
   .block.block-two-wide {
     width: 66.66%;
     padding: 80px; }
@@ -213,7 +214,7 @@ section {
     @media screen and (max-width: 992px) {
       .block.block-two-wide {
         width: 100%;
-        padding: 50px; } }
+        padding: 40px; } }
     @media screen and (min-width: 1200px) and (max-width: 1379px) {
       .block.block-two-wide {
         padding: 50px; } }
