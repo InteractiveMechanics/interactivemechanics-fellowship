@@ -29,9 +29,6 @@ header {
                 -ms-transform: rotate(-6deg) translateY(-6px);
                 -moz-transform: rotate(-6deg) translateY(-6px);
                 transform: rotate(-6deg) translateY(-6px);
-
-                -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
-                filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
             }
         }
 
@@ -45,9 +42,6 @@ header {
             -moz-transform: rotate(0) translateY(0);
             transform: rotate(0) translateY(0);
             transition: $transition;
-
-            -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,0));
-            filter: drop-shadow(0 1px 2px rgba(0,0,0,0));
         }
     }
 }
