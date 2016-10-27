@@ -97,6 +97,9 @@ section {
             padding: 50px;
         }
     }
+    &.block-three-wide {
+        width: 100%;
+    }
 
     &.block-half-tall {
         @media screen and (max-height: 820px) {
@@ -149,11 +152,20 @@ section {
         @media screen and (max-height: 820px) {
             max-height: 75vh;
         }
+        @media screen and #{$screen-xs} {
+            height: 50vh;
+        }
 
         img {
             width: 100%;
             height: auto;
             min-height: 100%;
+        }
+    }
+    &.block-bio {
+        @media screen and #{$screen-md} {
+            width: 50%;
+            p { font-size: 1.4rem; }
         }
     }
 }
