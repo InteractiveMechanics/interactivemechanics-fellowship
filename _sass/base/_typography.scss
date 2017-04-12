@@ -75,7 +75,7 @@ textarea.form-control {
     height: 120px;
 }
 p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 300;
     line-height: 2.1;
     margin-bottom: 30px;
@@ -98,6 +98,9 @@ p {
             font-size: 2.1rem;
         }
     }
+    @media screen and #{$screen-ltmd} {
+        font-size: 1.6rem;
+    }
 }
 a {
     color: white;
@@ -114,7 +117,7 @@ a {
     }
 }
 ul {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 30px;
@@ -135,7 +138,7 @@ span.divider {
     opacity: 0.35;
 }
 dl.dl-horizontal {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 
     dt {
         text-align: left;

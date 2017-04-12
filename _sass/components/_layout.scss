@@ -170,6 +170,14 @@ section {
     }
 }
 
+.two-columns {
+    column-count: 2;
+
+    @media screen and #{$screen-ltmd} {
+        column-count: 1;
+    }
+}
+
 hr {
     margin: 40px 0;
     border-top: none;

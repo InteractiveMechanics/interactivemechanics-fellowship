@@ -44,4 +44,72 @@ header {
             transition: $transition;
         }
     }
+
+    .menu {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-top: 5px;
+        cursor: pointer;
+
+        &:hover, &:focus, &:active {
+            span {
+                margin-bottom: 6px;
+            }
+        }
+
+        span {
+            width: 32px;
+            margin-bottom: 4px;
+            height: 4px;
+            background: white;
+            display: block;
+            transition: 0.5s all;
+            -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+    }
+}
+nav {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    transition: 0.5s all;
+
+    &.active {
+        display: block;
+    }
+
+    .nav-close {
+        position: absolute;
+        left: 480px;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        padding: 60px;
+        margin: 0;
+        list-style: none;
+        width: 480px;
+        height: 100%;
+
+        li > a {
+            font-family: $serif;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 2.1;
+            border: none;
+        }
+    }
 }

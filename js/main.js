@@ -11,4 +11,30 @@ $(function(){
             }
         }
     });
+
+    $('.menu').on('click', function(){
+        if ($('nav').hasClass('in')){
+            $('nav').toggleClass('in');
+            setTimeout(function(){
+                $('nav').toggleClass('active');
+            }, 500);
+        } else {
+            $('nav').toggleClass('active');
+            setTimeout(function(){
+                $('nav').toggleClass('in');
+            }, 50);
+        }
+    });
+    $('.nav-close').on('click', function(){
+        $('nav').toggleClass('in');
+        setTimeout(function(){
+            $('nav').toggleClass('active');
+        }, 500);
+    });
+    $('nav a').on('click', function(){
+        $('nav').toggleClass('in');
+        setTimeout(function(){
+            $('nav').toggleClass('active');
+        }, 500);
+    });
 });
