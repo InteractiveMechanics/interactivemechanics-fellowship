@@ -24,6 +24,11 @@
   -o-animation: fadeIn 1s 1 forwards;
   animation: fadeIn 1s 1 forwards; }
 
+.dont-break {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid; }
+
 body {
   font-family: "museo-sans", sans-serif; }
 
@@ -165,27 +170,18 @@ section {
       display: block; } }
   section.section-half-tall {
     max-height: 25vh; }
-    @media screen and (max-height: 820px) {
-      section.section-half-tall {
-        max-height: 35vh; } }
     @media screen and (max-width: 992px) {
       section.section-half-tall {
         max-height: none;
         height: auto; } }
   section.section-one-tall {
     max-height: 50vh; }
-    @media screen and (max-height: 820px) {
-      section.section-one-tall {
-        max-height: 75vh; } }
     @media screen and (max-width: 992px) {
       section.section-one-tall {
         max-height: none;
         height: auto; } }
   section.section-two-tall {
     max-height: 100vh; }
-    @media screen and (max-height: 820px) {
-      section.section-two-tall {
-        max-height: 150vh; } }
     @media screen and (min-width: 992px) and (max-width: 1199px) {
       section.section-two-tall {
         max-height: 150vh;
@@ -196,9 +192,6 @@ section {
         height: auto; } }
   section.section-three-tall {
     max-height: 150vh; }
-    @media screen and (max-height: 820px) {
-      section.section-three-tall {
-        max-height: 200vh; } }
     @media screen and (max-width: 992px) {
       section.section-three-tall {
         max-height: none;
@@ -235,36 +228,24 @@ section {
         padding: 50px; } }
   .block.block-three-wide {
     width: 100%; }
-  @media screen and (max-height: 820px) {
-    .block.block-half-tall {
-      height: 35vh; } }
   @media screen and (max-width: 992px) {
     .block.block-half-tall {
       max-height: none;
       height: auto; } }
   .block.block-one-tall {
     height: 50vh; }
-    @media screen and (max-height: 820px) {
-      .block.block-one-tall {
-        height: 75vh; } }
     @media screen and (max-width: 992px) {
       .block.block-one-tall {
         max-height: none;
         height: auto; } }
   .block.block-two-tall {
     height: 100vh; }
-    @media screen and (max-height: 820px) {
-      .block.block-two-tall {
-        height: 150vh; } }
     @media screen and (max-width: 992px) {
       .block.block-two-tall {
         max-height: none;
         height: auto; } }
   .block.block-three-tall {
     height: 150vh; }
-    @media screen and (max-height: 820px) {
-      .block.block-three-tall {
-        height: 200vh; } }
     @media screen and (max-width: 992px) {
       .block.block-three-tall {
         max-height: none;
@@ -273,9 +254,6 @@ section {
     padding: 0;
     max-height: 50vh;
     background-size: cover; }
-    @media screen and (max-height: 820px) {
-      .block.block-image {
-        max-height: 75vh; } }
     @media screen and (max-width: 767px) {
       .block.block-image {
         height: 50vh; } }
@@ -290,7 +268,8 @@ section {
         font-size: 1.4rem; } }
 
 .two-columns {
-  column-count: 2; }
+  column-count: 2;
+  column-gap: 30px; }
   @media screen and (max-width: 992px) {
     .two-columns {
       column-count: 1; } }
@@ -619,6 +598,11 @@ footer {
   border-right: 1px solid #f1f2f2;
   border-bottom: 1px solid #f1f2f2;
   background: white; }
+  .block-feature a {
+    color: #2c3392; }
+
+.block-bio {
+  padding: 60px !important; }
 
 .block-eligibility {
   background: #00badb;
@@ -782,6 +766,6 @@ footer {
   .block-apply-now:hover:before, .block-apply-now:hover:after, .block-apply-now:focus:before, .block-apply-now:focus:after, .block-apply-now:active:before, .block-apply-now:active:after {
     opacity: 0.1; }
   .block-apply-now h3 {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,3 +24,8 @@
     -o-animation: fadeIn 1s 1 forwards;
     animation: fadeIn 1s 1 forwards; 
 }
+.dont-break {
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
