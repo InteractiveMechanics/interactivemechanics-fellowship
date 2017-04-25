@@ -273,6 +273,18 @@
     background: white;
     color: black;
 
+    a.btn.btn-text {
+        color: $darkblue;
+        margin: 0;
+
+        line {
+            stroke: $darkblue;
+        }
+        polygon {
+            fill: $darkblue;
+        }
+    }
+
     &:after {
         content: '';
         width: 0;

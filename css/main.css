@@ -721,6 +721,13 @@ footer {
 .block-speakers-sub {
   background: white;
   color: black; }
+  .block-speakers-sub a.btn.btn-text {
+    color: #2c3392;
+    margin: 0; }
+    .block-speakers-sub a.btn.btn-text line {
+      stroke: #2c3392; }
+    .block-speakers-sub a.btn.btn-text polygon {
+      fill: #2c3392; }
   .block-speakers-sub:after {
     content: '';
     width: 0;
