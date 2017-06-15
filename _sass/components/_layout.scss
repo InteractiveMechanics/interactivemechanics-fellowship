@@ -13,12 +13,18 @@ section {
         display: block;
     }
 
+    &.section-padding {
+        padding: 40px;
+    }
     &.section-half-tall {
         max-height: 25vh;
 
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
+        }
+        @media screen and #{$screen-sh} {
+            max-height: 35vh;
         }
     }
     &.section-one-tall {
@@ -27,6 +33,9 @@ section {
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
+        }
+        @media screen and #{$screen-sh} {
+            max-height: 70vh;
         }
     }
     &.section-two-tall {
@@ -40,6 +49,9 @@ section {
             max-height: none;
             height: auto;
         }
+        @media screen and #{$screen-sh} {
+            max-height: 140vh;
+        }
     }
     &.section-three-tall {
         max-height: 150vh;
@@ -47,6 +59,9 @@ section {
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
+        }
+        @media screen and #{$screen-sh} {
+            max-height: 210vh;
         }
     }
 }
@@ -102,6 +117,9 @@ section {
             max-height: none;
             height: auto;
         }
+        @media screen and #{$screen-sh} {
+            height: 70vh;
+        }
     }
     &.block-two-tall {
         height: 100vh;
@@ -110,6 +128,9 @@ section {
             max-height: none;
             height: auto;
         }
+        @media screen and #{$screen-sh} {
+            height: 140vh;
+        }
     }
     &.block-three-tall {
         height: 150vh;
@@ -117,6 +138,9 @@ section {
         @media screen and #{$screen-ltmd} {
             max-height: none;
             height: auto;
+        }
+        @media screen and #{$screen-sh} {
+            height: 210vh;
         }
     }
 
@@ -127,6 +151,9 @@ section {
 
         @media screen and #{$screen-xs} {
             height: 50vh;
+        }
+        @media screen and #{$screen-sh} {
+            max-height: 70vh;
         }
 
         img {
@@ -149,6 +176,63 @@ section {
 
     @media screen and #{$screen-ltmd} {
         column-count: 1;
+    }
+}
+.three-columns {
+    column-count: 3;
+    column-gap: 30px;
+
+    @media screen and #{$screen-ltmd} {
+        column-count: 1;
+    }
+}
+
+.bio-image {
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    float: left;
+    margin-right: 20px;
+}
+.block-mentor {
+    background-position: center center;
+    background-size: 100% !important;
+    position: relative;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    @media screen and #{$screen-xs} {
+        height: 50vh !important;
+        max-height: 320px !important;
+    }
+
+    &:hover, &:focus, &:active {
+        background-size: 110% !important;
+    }
+    
+    .block-mentor-text {
+        padding: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        h4 {
+            margin: 0;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        h2 {
+            margin: 0;
+            font-size: 48px;
+            color: white;
+            text-shadow: 0 0 15px rgba(0,0,0,0.5);
+            text-transform: none;
+        }
+        a {
+            min-height: 0 !important;
+            margin-top: 0;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 }
 
@@ -192,3 +276,26 @@ hr {
         pointer-events: none;
     }
 }
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 0;
+
+            .modal-body {
+                padding: 40px;
+
+                .close {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+                h2 {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+

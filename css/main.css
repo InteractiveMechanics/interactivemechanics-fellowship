@@ -168,18 +168,26 @@ section {
   @media screen and (max-width: 992px) {
     section {
       display: block; } }
+  section.section-padding {
+    padding: 40px; }
   section.section-half-tall {
     max-height: 25vh; }
     @media screen and (max-width: 992px) {
       section.section-half-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      section.section-half-tall {
+        max-height: 35vh; } }
   section.section-one-tall {
     max-height: 50vh; }
     @media screen and (max-width: 992px) {
       section.section-one-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      section.section-one-tall {
+        max-height: 70vh; } }
   section.section-two-tall {
     max-height: 100vh; }
     @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -190,12 +198,18 @@ section {
       section.section-two-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      section.section-two-tall {
+        max-height: 140vh; } }
   section.section-three-tall {
     max-height: 150vh; }
     @media screen and (max-width: 992px) {
       section.section-three-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      section.section-three-tall {
+        max-height: 210vh; } }
 
 .block {
   padding: 50px;
@@ -238,18 +252,27 @@ section {
       .block.block-one-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      .block.block-one-tall {
+        height: 70vh; } }
   .block.block-two-tall {
     height: 100vh; }
     @media screen and (max-width: 992px) {
       .block.block-two-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      .block.block-two-tall {
+        height: 140vh; } }
   .block.block-three-tall {
     height: 150vh; }
     @media screen and (max-width: 992px) {
       .block.block-three-tall {
         max-height: none;
         height: auto; } }
+    @media screen and (max-height: 700px) {
+      .block.block-three-tall {
+        height: 210vh; } }
   .block.block-image {
     padding: 0;
     max-height: 50vh;
@@ -257,6 +280,9 @@ section {
     @media screen and (max-width: 767px) {
       .block.block-image {
         height: 50vh; } }
+    @media screen and (max-height: 700px) {
+      .block.block-image {
+        max-height: 70vh; } }
     .block.block-image img {
       width: 100%;
       height: auto;
@@ -273,6 +299,52 @@ section {
   @media screen and (max-width: 992px) {
     .two-columns {
       column-count: 1; } }
+
+.three-columns {
+  column-count: 3;
+  column-gap: 30px; }
+  @media screen and (max-width: 992px) {
+    .three-columns {
+      column-count: 1; } }
+
+.bio-image {
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+  float: left;
+  margin-right: 20px; }
+
+.block-mentor {
+  background-position: center center;
+  background-size: 100% !important;
+  position: relative;
+  transition: 0.5s all;
+  cursor: pointer; }
+  @media screen and (max-width: 767px) {
+    .block-mentor {
+      height: 50vh !important;
+      max-height: 320px !important; } }
+  .block-mentor:hover, .block-mentor:focus, .block-mentor:active {
+    background-size: 110% !important; }
+  .block-mentor .block-mentor-text {
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .block-mentor .block-mentor-text h4 {
+      margin: 0;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    .block-mentor .block-mentor-text h2 {
+      margin: 0;
+      font-size: 48px;
+      color: white;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      text-transform: none; }
+    .block-mentor .block-mentor-text a {
+      min-height: 0 !important;
+      margin-top: 0;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 hr {
   margin: 40px 0;
@@ -309,6 +381,18 @@ hr {
     right: 0;
     transition: 0.5s all;
     pointer-events: none; }
+
+.modal .modal-dialog .modal-content {
+  border-radius: 0; }
+  .modal .modal-dialog .modal-content .modal-body {
+    padding: 40px; }
+    .modal .modal-dialog .modal-content .modal-body .close {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+    .modal .modal-dialog .modal-content .modal-body h2 {
+      margin-top: 0px;
+      margin-bottom: 20px; }
 
 header {
   position: fixed;
