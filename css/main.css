@@ -210,6 +210,9 @@ section {
     @media screen and (max-height: 700px) and (min-width: 768px) {
       section.section-three-tall {
         max-height: 210vh; } }
+  section.section-auto-tall {
+    max-height: none !important;
+    height: auto !important; }
 
 .block {
   padding: 50px;
@@ -273,6 +276,9 @@ section {
     @media screen and (max-height: 700px) and (min-width: 768px) {
       .block.block-three-tall {
         height: 210vh; } }
+  .block.block-auto-tall {
+    height: auto;
+    max-height: none; }
   .block.block-image {
     padding: 0;
     max-height: 50vh;

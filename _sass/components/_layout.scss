@@ -64,6 +64,10 @@ section {
             max-height: 210vh;
         }
     }
+    &.section-auto-tall {
+        max-height: none !important;
+        height: auto !important;
+    }
 }
 
 .block {
@@ -142,6 +146,10 @@ section {
         @media screen and #{$screen-sh} {
             height: 210vh;
         }
+    }
+    &.block-auto-tall {
+        height: auto;
+        max-height: none;
     }
 
     &.block-image {
